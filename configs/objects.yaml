@@ -1,0 +1,32 @@
+objects:
+  - name: apple
+    cat: fruit
+    mesh: assets/meshes/apple.glb
+
+  - name: strawberry
+    cat: fruit
+    mesh: assets/meshes/strawberry.glb
+
+  - name: eggplant
+    cat: fruit
+    mesh: assets/meshes/eggplant.glb
+
+  - name: banana
+    cat: fruit
+    mesh: assets/meshes/banana.glb
+
+  - name: bottle
+    cat: container
+    mesh: assets/meshes/bottle.glb
+
+  - name: hat
+    cat: clothing
+    mesh: assets/meshes/hat.glb
+
+  - name: mug
+    cat: container
+    mesh: assets/meshes/mug.glb
+
+  - name: wrench
+    cat: tool
+    mesh: assets/meshes/wrench.glb
