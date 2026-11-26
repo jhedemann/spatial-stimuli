@@ -8,11 +8,22 @@ import yaml
 
 @dataclass
 class Object:
-    name: str  # "apple" for an apple
-    cat: str  # "fruit" for an apple
+    """
+    Represents a single object stimulus as part of a relation.
+    Used for sentences and visual scenes alike.
 
-    mesh: Path | None = None # path to mesh file of the object
-    role: str = "" # depending on relation (either "higher" or "lower" in "above" relation)
+    Attributes:
+        name = Identfier of the object (e.g. "apple")
+        cat = Category the object belongs to (e.g. "fruit")
+        mesh = Optional path to the object's 3D mesh file
+        role = Optional role in a trial, dependent on relation (e.g. either "higher" or "lower" in "above" relation)
+    """
+
+    name: str
+    cat: str
+
+    mesh: Path | None = None
+    role: str = ""
 
 
 def load_all_objs(path = Path | str):
